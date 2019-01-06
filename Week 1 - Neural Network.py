@@ -43,7 +43,7 @@ alpha = 0.003 #learning rate
 
 mynet = Net() #create model from class
 criterion = torch.nn.MSELoss() #define cost criterion
-optimizer = torch.optim.Rprop(mynet.parameters(), lr=lr) #choose optimizer
+optimizer = torch.optim.Rprop(mynet.parameters(), lr=alpha) #choose optimizer
 
 #define graph for plotting costs
 costs = [] #to store our calculated costs
